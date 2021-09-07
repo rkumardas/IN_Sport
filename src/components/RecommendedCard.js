@@ -1,6 +1,8 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 
+import styles from './styles/Recommended.style';
+
 const Eventcards = () => {
   return (
     <TouchableOpacity>
@@ -22,13 +24,3 @@ const Eventcards = () => {
 };
 
 export default Eventcards;
-
-const styles = StyleSheet.create({
-  card: {
-    height: 150,
-    width: 300,
-    marginHorizontal: 10,
-    marginVertical: 20,
-    borderRadius: 20,
-  },
-});

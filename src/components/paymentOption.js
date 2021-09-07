@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
+import styles from './styles/pymentOption.style';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -43,27 +44,3 @@ const paymentOption = () => {
 };
 
 export default paymentOption;
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignContent: 'center',
-  },
-  paybox: {
-    backgroundColor: 'white',
-    height: hp('8%'),
-    width: hp('8%'),
-    borderRadius: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginHorizontal: 25,
-    shadowOffset: {
-      width: 0,
-      height: 8,
-    },
-    elevation: 5,
-    shadowColor: 'black',
-    shadowRadius: 10,
-    shadowOpacity: 1,
-  },
-});

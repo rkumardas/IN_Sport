@@ -3,6 +3,8 @@ import {StyleSheet, View, ImageBackground} from 'react-native';
 import BottomSheet from '../components/BottomSheet';
 import {StackActions} from '@react-navigation/native';
 
+import styles from './styles/Parchase.style';
+
 const Purchase = ({route, navigation}) => {
   const {id} = route.params;
 
@@ -27,10 +29,3 @@ const Purchase = ({route, navigation}) => {
 };
 
 export default Purchase;
-
-const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    backgroundColor: 'blue',
-  },
-});
