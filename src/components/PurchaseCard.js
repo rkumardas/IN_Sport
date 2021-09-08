@@ -61,7 +61,7 @@ const Purchasecard = data => {
               <Image
                 source={require('../assets/close.png')}
                 resizeMode="cover"
-                style={{height: hp('2%'), width: wp('5%')}}
+                style={{height: hp('2%'), width: wp('5%'), marginVertical: 1}}
               />
             </View>
           </TouchableOpacity>

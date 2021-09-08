@@ -19,8 +19,7 @@ export default StyleSheet.create({
 
   imageWraper: {
     position: 'absolute',
-    top: hp('3%'),
-    height: hp('8%'),
+    top: hp('0%'),
     left: 0,
     right: 0,
     justifyContent: 'center',
@@ -51,7 +50,7 @@ export default StyleSheet.create({
     borderBottomLeftRadius: 10,
     paddingRight: wp('3%'),
     paddingLeft: wp('3%'),
-    marginRight: 12,
+    marginRight: 10,
   },
   bottomCard: {
     flex: 1,
