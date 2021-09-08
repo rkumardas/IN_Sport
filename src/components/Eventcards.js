@@ -70,11 +70,10 @@ const Eventcards = ({onCardClick, direction}) => {
                     color: 'black',
                     fontWeight: 'bold',
                   }}>
-                  {items.sport}{' '}
+                  {items.sport}
                 </Text>
               </View>
             </View>
-            {/* <View style={{width: wp('70%')}}> */}
             <Text
               style={{
                 ...styles.imageText,
@@ -89,15 +88,17 @@ const Eventcards = ({onCardClick, direction}) => {
                 ...styles.inforRowSB,
                 position: 'absolute',
                 top: hp('13%'),
+                marginTop: 10,
               }}>
               <View style={styles.inforow}>
                 <Image
                   source={require('../assets/schedule.png')}
                   resizeMode="cover"
                   style={{
-                    height: hp('2.5%'),
+                    height: hp('3%'),
                     width: wp('5%'),
                     marginHorizontal: wp('2%'),
+                    marginTop: 3.5,
                   }}
                 />
                 <Text style={styles.imageText}>{items.dateTime} </Text>
@@ -137,7 +138,7 @@ const Eventcards = ({onCardClick, direction}) => {
                   <Image
                     source={require('../assets/favorite.png')}
                     resizeMode="cover"
-                    style={{height: hp('2%'), width: wp('5%')}}
+                    style={{height: hp('3%'), width: wp('5%')}}
                   />
                 </View>
               </View>
@@ -147,7 +148,7 @@ const Eventcards = ({onCardClick, direction}) => {
                 <Image
                   source={require('../assets/av_timer.png')}
                   resizeMode="cover"
-                  style={{height: hp('2%'), width: wp('5%')}}
+                  style={{height: hp('3%'), width: wp('5%')}}
                 />
                 <Text style={styles.infoText}>Time left to Book : 3 hours</Text>
               </View>
@@ -158,11 +159,11 @@ const Eventcards = ({onCardClick, direction}) => {
                 </Text>
               </View>
               <View style={styles.inforRowSB}>
-                <View style={styles.inforow}>
+                <View style={{...styles.inforow, width: 250}}>
                   <Image
                     source={require('../assets/location.png')}
                     resizeMode="cover"
-                    style={{height: hp('2%'), width: wp('5%')}}
+                    style={{height: hp('3%'), width: wp('5%')}}
                   />
                   <Text style={styles.infoText}>{items.location}</Text>
                 </View>
