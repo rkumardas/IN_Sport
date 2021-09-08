@@ -138,7 +138,7 @@ const Eventcards = ({onCardClick, direction}) => {
                   <Image
                     source={require('../assets/favorite.png')}
                     resizeMode="cover"
-                    style={{height: hp('3%'), width: wp('5%')}}
+                    style={{height: hp('2%'), width: wp('5%')}}
                   />
                 </View>
               </View>
