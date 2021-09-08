@@ -48,27 +48,23 @@ const Home = ({navigation}) => {
           </View>
           {/* -------------------Input icon---------- */}
           <View style={styles.inputcontanair}>
-            <View style={{...styles.iconContainerL, paddingStart: 10}}>
-              <Image
-                source={require('../assets/search.png')}
-                resizeMode="cover"
-                style={{
-                  height: hp('4%'),
-                  width: wp('8%'),
-                }}
-              />
-            </View>
+            <Image
+              source={require('../assets/search.png')}
+              resizeMode="cover"
+              style={{
+                height: hp('4%'),
+                width: wp('8%'),
+              }}
+            />
             <TextInput
               style={styles.inputbox}
               placeholder="Search by Event, code, location"
             />
-            <View style={{...styles.iconContainerR, paddingEnd: 11}}>
-              <Image
-                resizeMode="cover"
-                source={require('../assets/tune.png')}
-                style={{height: hp('4%'), width: wp('9%')}}
-              />
-            </View>
+            <Image
+              resizeMode="cover"
+              source={require('../assets/tune.png')}
+              style={{height: hp('4%'), width: wp('9%')}}
+            />
           </View>
         </View>
 
